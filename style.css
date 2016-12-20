@@ -1,0 +1,90 @@
+html, body, .container-fluid {
+  height: 100%;  
+}  
+
+
+.btn, .topright-button {
+  height: 50%;
+  width: 100%;
+}
+
+.topright-button{
+  background-color: #008CBA;
+  border: none;
+  margin: 1px 0px 1px 0px;
+  padding: 0px 0px;
+  color:white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  cursor:pointer;
+  webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+  moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+  box-shadow: 0 0 4px rgba(0,0,0, .75);
+}
+
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+.topright-button:hover, .topright-button:focus{
+background-color :orange; /*make the background a little darker*/
+/*reduce the drop shadow size to give a pushed button effect*/
+-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+box-shadow: 0 0 1px rgba(0,0,0, .75);
+}
+
+
+.about-format {
+    width: 100%;
+    height: 53%;
+    border-color: red;
+    border-width: 2px;
+    border-style: double dashed;
+    text-align: left;    
+}
+
+.portfolio-format {
+    width: 100%;
+    margin-top: 2px;
+    height: 53%;
+    border-color: green;
+    border-width: 2px;
+    border-style: solid dashed;
+    text-align: left;    
+}
+
+.contact-format {
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 2px;  
+    height: 20%;
+    border-color: silver;
+    border-width: 2px;
+    border-style: solid dashed;
+    text-align: left;    
+}
+
+.footer-format {
+    height: 5%;
+    width: 100%;
+    border-color: gold;
+    border-width: 2px;
+    border-style: solid dashed ;
+    text-align: left;
+}
+
+img {
+   max-width: 100%;
+   max-height: 100%;
+}
+
+.header
+{
+    height:42px;
+    width: 100%;
+    border-color: blue;
+    border-width: 2px;
+    border-style: solid dashed;
+    padding: 1px 0px 1px 0px;
+    margin: 1px 5px 1px 5px;   
+}
