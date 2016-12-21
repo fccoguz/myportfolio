@@ -13,21 +13,26 @@
 
   <style>
 
+
+
     .header
     {
+--    	background-color: rgb(0,0,0);
+    	color: white;
         height:22px;
         width: 95vw;
         font-size: 0.66vw;
         border-color: blue;
         border-width: 2px;
         border-style: solid dashed;
-        padding: 1px 0px 1px 0px;
-        margin: 1px 5px 1px -15px;
+        padding: 0px 0px 0px 0px;
+        margin: 1px 5px 0px -15px;
     }
 
     html, body, .container-fluid {
     background-color: #fff;
     }
+
 
     h1 {
     font-family: @font-family-base;
@@ -35,11 +40,10 @@
     }
 
   .btn, .topright-button{
-    height: 100%;
+    height: 90%;
 	width: 100%;
     background-color: #008CBA;
     border: none;
-    margin: 1px 0px 2px 0px;
     padding: 0px 0px 0px 0px;
     color:white;
     text-align: center;
@@ -47,6 +51,7 @@
     display: inline-block;
     font-size: 1em;
     cursor:pointer;
+    margin: 0px 0px 2px 0px
     webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
     moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
     box-shadow: 0 0 4px rgba(0,0,0, .75);
@@ -65,6 +70,12 @@
 
 	padding: 0px;
 	margin: 0px;
+}
+
+.header-buttons{
+	margin: 0px 0px 25px 0px;
+
+
 }
 
   .about-format {
@@ -128,7 +139,7 @@
     <div class="col-xs-3">
     center right
     </div>
-    <div class="col-xs-3">
+    <div class="col-xs-3 header-buttons">
     <!--h2>top right</h2-->
      <div class="row " id="header-topright-buttons">
       <div class="col-xs-4">
