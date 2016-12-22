@@ -17,7 +17,6 @@
 
     .header
     {
---    	background-color: rgb(0,0,0);
     	color: white;
         height:22px;
         width: 95vw;
@@ -26,7 +25,7 @@
         border-width: 2px;
         border-style: solid dashed;
         padding: 0px 0px 0px 0px;
-        margin: 1px 5px 0px -15px;
+        margin: 1px 5px 1px -15px;
     }
 
     html, body, .container-fluid {
@@ -42,6 +41,7 @@
   .btn, .topright-button{
     height: 90%;
 	width: 100%;
+	margin: 1px 0px 2px 0px;
     background-color: #008CBA;
     border: none;
     padding: 0px 0px 0px 0px;
@@ -49,9 +49,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1em;
     cursor:pointer;
-    margin: 0px 0px 2px 0px
     webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
     moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
     box-shadow: 0 0 4px rgba(0,0,0, .75);
@@ -61,22 +59,16 @@
   .topright-button:hover, .topright-button:focus{
   background-color :orange; /*make the background a little darker*/
   /*reduce the drop shadow size to give a pushed button effect*/
-  -webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
-  -moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+  webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+  moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
   box-shadow: 0 0 1px rgba(0,0,0, .75);
   }
 
 .col-xs-4 {
-
 	padding: 0px;
 	margin: 0px;
 }
 
-.header-buttons{
-	margin: 0px 0px 25px 0px;
-
-
-}
 
   .about-format {
       width: 95vw;
@@ -100,7 +92,6 @@
   .contact-format {
       width: 95vw;
       margin-top: 2px;
-      margin-bottom: 2px;
       height: 20%;
       border-color: silver;
       border-width: 2px;
@@ -109,6 +100,7 @@
   }
 
   .footer-format {
+      margin-top: 2px;
       height: 5%;
       width: 95vw;
       border-color: gold;
@@ -124,83 +116,90 @@
 
   </style>
 
+
+  <script  language="javascript" type="text/javascript">
+      function visitPage(link){
+          window.location=link;
+      }
+  </script>
+
 </head>
 
 <body>
+
   <div class="container-fluid">
 
-   <div class="header row">
-    <div class="col-xs-3">
-    top left
-    </div>
-    <div class="col-xs-3">
-    center left
-    </div>
-    <div class="col-xs-3">
-    center right
-    </div>
-    <div class="col-xs-3 header-buttons">
-    <!--h2>top right</h2-->
-     <div class="row " id="header-topright-buttons">
-      <div class="col-xs-4">
-      <button class="topright-button">ABOUT</button>
-      </div>
-      <div class="col-xs-4">
-      <button class="topright-button">PORTFOLIO</button>
-      </div>
-      <div class="col-xs-4">
-      <button class="topright-button">CONTACT</button>
-      </div>
-    </div>
-    </div>
+		<div class="header row">
+			<div class="col-xs-3">
+			top left
+			</div>
 
-    </div>
+			<div class="col-xs-3">
+			center left
+			</div>
 
-  <div class="row about-format" id="about-section">
-  Hi! I am Oguz from Ankara. (This is a change!!!) (And... this is another change!!)
-    <p><p>
-    <tab>I am a seasoned IT guy with some software development and management experience.
-<p><p>
-    I am recently interested in developing my front-end and full-stack development skills to catch up the new wave!
-      <p>I started with front-end development with CSS, HTML5, Javascript.
+			<div class="col-xs-3">
+			center right
+			</div>
 
-    <p>
-    </div>
+			<div class="col-xs-3">
+				 <div class="row " id="header-topright-buttons">
+					  <div class="col-xs-4">
+					  <button class="topright-button" onClick="visitPage('#about-section')" >ABOUT</button>
+					  </div>
+					  <div class="col-xs-4">
+					  <button class="topright-button" onClick="visitPage('#portfolio-section')" >PORTFOLIO</button>
+					  </div>
+					  <div class="col-xs-4">
+					  <button class="topright-button" onClick="visitPage('#contact-section')" >CONTACT</button>
+					  </div>
+				</div> <!-- topright buttons row -->
+			</div>
+
+  		</div> <!-- header section-->
+
+	  <div class="row about-format" id="about-section">
+	  Hi! I am Oguz from Ankara. (This is a change!!!) (And... this is another change!!)
+	  <p>
+	  I am a seasoned IT guy with some software development and management experience.
+	  <p>
+	  I am recently interested in developing my front-end and full-stack development skills to catch up the new wave!
+	  <p>I started with front-end development with CSS, HTML5, Javascript.
+
+	  </div> <!-- about section-->
+
+	  <div class="row portfolio-format" id="portfolio-section">
+	   my portfolio
+		<p>
+		  <div class="col-xs-2">
+		  <a href src="#"><img src="http://publicdomainarchive.com/wp-content/uploads/2016/01/public-domain-images-free-stock-photos-001-1000x667.jpg"></a>
+		</div>
+		  <div class="col-xs-2">
+		  <a href src="#"><img src="http://publicdomainarchive.com/wp-content/uploads/2016/01/public-domain-images-free-stock-photos-001-1000x667.jpg"></a>
+		</div>
+		  <div class="col-xs-2">
+		  <a href src="#"><img src="http://publicdomainarchive.com/wp-content/uploads/2016/01/public-domain-images-free-stock-photos-001-1000x667.jpg"></a>
+		</div>
+		  <div class="col-xs-2">
+		  <a href src="#"><img src="http://publicdomainarchive.com/wp-content/uploads/2016/01/public-domain-images-free-stock-photos-001-1000x667.jpg"></a>
+		</div>
+		  <div class="col-xs-2">
+		  <a href src="#"><img src="http://publicdomainarchive.com/wp-content/uploads/2016/01/public-domain-images-free-stock-photos-001-1000x667.jpg"></a>
+		</div>
+		  <div class="col-xs-2">
+		  <a href src="#"><img src="http://publicdomainarchive.com/wp-content/uploads/2016/01/public-domain-images-free-stock-photos-001-1000x667.jpg"></a>
+		</div>
+
+	  </div> <!-- portfolio section -->
+
+	  <div class="row contact-format" id="contact-section">
+	  contact me
+	  </div> <!-- contact section -->
 
 
-
-  <div class="row portfolio-format" id="portfolio-section">
-   my portfolio
-    <p>
-      <div class="col-xs-1">
-      <a href src="#"><img src="http://publicdomainarchive.com/wp-content/uploads/2016/01/public-domain-images-free-stock-photos-001-1000x667.jpg"></a>
-    </div>
-      <div class="col-xs-1">
-      <a href src="#"><img src="http://publicdomainarchive.com/wp-content/uploads/2016/01/public-domain-images-free-stock-photos-001-1000x667.jpg"></a>
-    </div>
-      <div class="col-xs-1">
-      <a href src="#"><img src="http://publicdomainarchive.com/wp-content/uploads/2016/01/public-domain-images-free-stock-photos-001-1000x667.jpg"></a>
-    </div>
-      <div class="col-xs-1">
-      <a href src="#"><img src="http://publicdomainarchive.com/wp-content/uploads/2016/01/public-domain-images-free-stock-photos-001-1000x667.jpg"></a>
-    </div>
-      <div class="col-xs-1">
-      <a href src="#"><img src="http://publicdomainarchive.com/wp-content/uploads/2016/01/public-domain-images-free-stock-photos-001-1000x667.jpg"></a>
-    </div>
-      <div class="col-xs-1">
-      <a href src="#"><img src="http://publicdomainarchive.com/wp-content/uploads/2016/01/public-domain-images-free-stock-photos-001-1000x667.jpg"></a>
-    </div>
-
-   </div>
-  <div class="row contact-format" id="contact-section">
-  contact me
-  </div>
-
-
-  <div class="row footer-format" id="footer-section">
-    footer
-<p>
-  </div>
+	  <div class="row footer-format" id="footer-section">
+		footer
+	  </div> <!-- footer section-->
 
   </div>
 
