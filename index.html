@@ -11,15 +11,21 @@
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+  <script src="https://use.fontawesome.com/b7021fe07d.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
+
+
   <style>
-
-
 
     .header
     {
-    	color: white;
+	    position:fixed;
+    	top:0px;
+        width:100%;
         height:22px;
-        width: 95vw;
+    	color: white;
+        --width: 95vw;
         font-size: 0.66vw;
         border-color: blue;
         border-width: 2px;
@@ -71,8 +77,9 @@
 
 
   .about-format {
+      background-color: #b3b3b3;
+      height: 20%;
       width: 95vw;
-      height: 53%;
       border-color: red;
       border-width: 2px;
       border-style: double dashed;
@@ -81,8 +88,8 @@
 
   .portfolio-format {
       width: 95vw;
+      height: 40%;
       margin-top: 2px;
-      height: 53%;
       border-color: green;
       border-width: 2px;
       border-style: solid dashed;
@@ -99,11 +106,24 @@
       text-align: left;
   }
 
+  .socialmedia-format {
+    height: auto;
+	  width: 95vw;
+  	text-align: left;
+    color: white;
+	  font-size: 0.66vw;
+	  border-color: blue;
+	  border-width: 2px;
+	  border-style: solid dashed;
+    padding: 0px 0px 0px 15px;
+    margin: 2px 0px 0px -15px;
+  }
+
   .footer-format {
       margin-top: 2px;
-      height: 5%;
+      height: 10%;
       width: 95vw;
-      border-color: gold;
+      border-color: #ff0066;
       border-width: 2px;
       border-style: solid dashed ;
       text-align: left;
@@ -113,6 +133,35 @@
      max-width: 100%;
      max-height: 100%;
   }
+
+  #SMV_linkedin, #SMV_github, #SMV_twitter, #SMV_instagram {
+  height: auto;
+  width: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #3399ff;
+  border-radius: 20%;
+  margin: 1px 0px 1px 1px;
+  background-color: white;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor:pointer;
+  font-size: 1vw;;
+  }
+
+#SMV_linkedin:hover, #SMV_github:hover, #SMV_twitter:hover, #SMV_instagram:hover {
+background-color: orange;
+}
+
+
+.content-block {
+      position:fixed;
+      top: 22px;
+      margin-top: 2px;
+      max-height: auto;
+}
 
   </style>
 
@@ -127,36 +176,37 @@
 
 <body>
 
-  <div class="container-fluid">
 
-		<div class="header row">
-			<div class="col-xs-3">
-			top left
-			</div>
+    <div class="row header">
+      <div class="col-xs-3">
+      top left
+      </div>
 
-			<div class="col-xs-3">
-			center left
-			</div>
+      <div class="col-xs-3">
+      center left
+      </div>
 
-			<div class="col-xs-3">
-			center right
-			</div>
+      <div class="col-xs-3">
+      center right
+      </div>
 
-			<div class="col-xs-3">
-				 <div class="row " id="header-topright-buttons">
-					  <div class="col-xs-4">
-					  <button class="topright-button" onClick="visitPage('#about-section')" >ABOUT</button>
-					  </div>
-					  <div class="col-xs-4">
-					  <button class="topright-button" onClick="visitPage('#portfolio-section')" >PORTFOLIO</button>
-					  </div>
-					  <div class="col-xs-4">
-					  <button class="topright-button" onClick="visitPage('#contact-section')" >CONTACT</button>
-					  </div>
-				</div> <!-- topright buttons row -->
-			</div>
+      <div class="col-xs-3">
+         <div class="row " id="header-topright-buttons">
+            <div class="col-xs-4">
+            <button class="topright-button" onClick="visitPage('#about-section')" >ABOUT</button>
+            </div>
+            <div class="col-xs-4">
+            <button class="topright-button" onClick="visitPage('#portfolio-section')" >PORTFOLIO</button>
+            </div>
+            <div class="col-xs-4">
+            <button class="topright-button" onClick="visitPage('#contact-section')" >CONTACT</button>
+            </div>
+        </div> <!-- topright buttons row -->
+      </div>
 
-  		</div> <!-- header section-->
+    </div> <!-- header section-->
+
+  <div class="container-fluid content-block">
 
 	  <div class="row about-format" id="about-section">
 	  Hi! I am Oguz from Ankara. (This is a change!!!) (And... this is another change!!)
@@ -196,6 +246,44 @@
 	  contact me
 	  </div> <!-- contact section -->
 
+	  <div class="row socialmedia-format" id="socialmedia-section">
+	  		<div class="row">
+	  			<div class="col-xs-6">
+					<div class="row" id="socialmedia-venues">
+						<div class="col-xs-3" id="SMV_linkedin">
+							<a href="https://www.linkedin.com/in/oguz-baktir-634b653" target='_blank'>
+								<i class="fa fa-fw fa-linkedin" aria-hidden="true"></i>
+							</a>
+						</div>
+
+						<div class="col-xs-3" id="SMV_github">
+							<a href="https://github.com/fccoguz" target='_blank'>
+								<i class="fa fa-fw fa-github" aria-hidden="true"></i>
+							</a>
+						</div>
+
+						<div class="col-xs-3" id="SMV_twitter">
+							<a href="https://twitter.com/oguzbaktir" target='_blank'>
+								<i class="fa fa-fw fa-twitter" aria-hidden="true"></i>
+							</a>
+						</div>
+
+						<div class="col-xs-3" id="SMV_instagram">
+							<a href="https://www.instagram.com/oguzbaktir/" target='_blank'>
+								<i class="fa fa-fw fa-instagram" aria-hidden="true"></i>
+							</a>
+						</div>
+
+					</div>
+	  			</div> <!-- bitis: sol taraf-->
+
+	  			<div class="col-xs-6">
+
+	  			</div>
+
+
+	  		</div>
+	  </div> <!-- socialmedia section -->
 
 	  <div class="row footer-format" id="footer-section">
 		footer
