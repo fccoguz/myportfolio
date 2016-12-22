@@ -20,18 +20,18 @@
 
     .header
     {
-	    position:fixed;
-    	top:0px;
+	      position:fixed;
+    	  top:0px;
         width:100%;
         height:22px;
-    	color: white;
+    	  color: white;
         --width: 95vw;
         font-size: 0.66vw;
         border-color: blue;
         border-width: 2px;
         border-style: solid dashed;
         padding: 0px 0px 0px 0px;
-        margin: 1px 5px 1px -15px;
+        margin: 1px 5px 1px 0px;
     }
 
     html, body, .container-fluid {
@@ -84,26 +84,32 @@
       border-width: 2px;
       border-style: double dashed;
       text-align: left;
+      padding-left: 20px;
   }
 
   .portfolio-format {
       width: 95vw;
       height: 40%;
+      min-height: 40%;
+      max-height: auto;
       margin-top: 2px;
       border-color: green;
       border-width: 2px;
       border-style: solid dashed;
       text-align: left;
+      padding-left: 20px;
   }
 
   .contact-format {
       width: 95vw;
       margin-top: 2px;
       height: 20%;
+      min-height: 20%;
       border-color: silver;
       border-width: 2px;
       border-style: solid dashed;
       text-align: left;
+      padding-left: 20px;
   }
 
   .socialmedia-format {
@@ -115,18 +121,21 @@
 	  border-color: blue;
 	  border-width: 2px;
 	  border-style: solid dashed;
-    padding: 0px 0px 0px 15px;
+    padding: 0px 0px 0px 30px;
     margin: 2px 0px 0px -15px;
   }
 
   .footer-format {
       margin-top: 2px;
       height: 10%;
+      min-height: 10%;
       width: 95vw;
       border-color: #ff0066;
       border-width: 2px;
       border-style: solid dashed ;
       text-align: left;
+      padding-left: 20px;
+
   }
 
   img {
@@ -160,8 +169,18 @@ background-color: orange;
       position:fixed;
       top: 22px;
       margin-top: 2px;
-      max-height: auto;
+
+      width: auto;
+      padding: 0;
+      margin-left: 20px;
+      height: 100%;
+
+  min-height: 2vw;
+  overflow: auto; /*Allows the scrollable area to have a scrollbar based on the height of its content*/
+  background: #ccc;
+
 }
+
 
   </style>
 
@@ -208,7 +227,7 @@ background-color: orange;
 
   <div class="container-fluid content-block">
 
-	  <div class="row about-format" id="about-section">
+	  <div class="row about-format scroll" id="about-section">
 	  Hi! I am Oguz from Ankara. (This is a change!!!) (And... this is another change!!)
 	  <p>
 	  I am a seasoned IT guy with some software development and management experience.
