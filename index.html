@@ -18,6 +18,21 @@
 
   <style>
 
+    html, body, .container-fluid {
+    background-color: #fff;
+    }
+
+    h1 {
+    font-family: @font-family-base;
+    font-size: @font-size-base;
+    }
+
+    .col-xs-4 {
+    padding: 0px;
+    margin: 0px;
+    }
+
+
     .header
     {
 	      position:fixed;
@@ -34,20 +49,10 @@
         margin: 1px 5px 1px 0px;
     }
 
-    html, body, .container-fluid {
-    background-color: #fff;
-    }
-
-
-    h1 {
-    font-family: @font-family-base;
-    font-size: @font-size-base;
-    }
-
   .btn, .topright-button{
     height: 90%;
-	width: 100%;
-	margin: 1px 0px 2px 0px;
+	  width: 100%;
+	  margin: 1px 0px 2px 0px;
     background-color: #008CBA;
     border: none;
     padding: 0px 0px 0px 0px;
@@ -70,15 +75,10 @@
   box-shadow: 0 0 1px rgba(0,0,0, .75);
   }
 
-.col-xs-4 {
-	padding: 0px;
-	margin: 0px;
-}
-
-
   .about-format {
       background-color: #b3b3b3;
       height: 20%;
+      min-height: 30%;
       width: 95vw;
       border-color: red;
       border-width: 2px;
@@ -225,9 +225,9 @@ background-color: orange;
 
     </div> <!-- header section-->
 
-  <div class="container-fluid content-block">
+  <div class="container-fluid content-block" id="content">
 
-	  <div class="row about-format scroll" id="about-section">
+	  <div class="row about-format" id="about-section">
 	  Hi! I am Oguz from Ankara. (This is a change!!!) (And... this is another change!!)
 	  <p>
 	  I am a seasoned IT guy with some software development and management experience.
