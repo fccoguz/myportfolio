@@ -19,8 +19,9 @@
   <style>
 
     html, body, .container-fluid {
-    background-color: #66ccff;
-    <!-- beyaz #fff; -->
+        background-color: #cc6699;
+            <!-- beyaz #fff; -->
+        max-width: 100%;
     }
 
     h1 {
@@ -40,21 +41,19 @@
     	  top:0px;
         left: 0px;
         width: 100vw;
-        height:26px;
+        height:40px;
     	  color: #cc6699;
         background-color: #cc6699;
-        font-size: 1vw;
+        font-size: 1.5vw;
         font-weight: bolder;
-        text-align: center;
-        vertical-align: center;
         border-color: blue;
         border-width: 0px;
         border-style: solid dashed;
         padding: 0px 0px 0px 0px;
-        margin: 0px 0px 1px 0px;
+        margin: 0px 0px 0px 0px;
     }
 
-
+     /* header for the bottom part */
     .header2
     {   
         position:fixed;
@@ -62,15 +61,14 @@
         left: 0px;
         right: auto;
         width: 100vw;
-        height:26px;
+        height:40px;
         color: #cc6699;
         background-color: #cc6699;        
-        font-size: 1vw;
+        font-size: 1.5vw;
         font-weight: bolder;
         text-align: center;
-        vertical-align: center;
         border-color: blue;
-        border-width: 2px;
+        border-width: 0px;
         border-style: solid dashed;
         padding: 0px 0px 0px 0px;
         margin: 0px 0px 0px 0px;
@@ -78,20 +76,18 @@
 
 
   .btn, .topright-button{
-    height: 94%;
+    height: 100%;
 	  width: 100%;
-	  margin: 1px 0px 1px 0px;
+	  margin: 0px 0px 0px 0px;
     background-color: #008CBA;
-    border: none;
     padding: 0px 0px 0px 0px;
     color:white;
+    vertical-align:  middle;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     cursor:pointer;
-    webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
-    moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
-    box-shadow: 0 0 4px rgba(0,0,0, .75);
+    webkit-box-shadow: 0 0 0px rgba(0,0,0, .75);
+    moz-box-shadow: 0 0 0px rgba(0,0,0, .75);
+    box-shadow: 0 0 0px rgba(0,0,0, .75);
   }
 
   /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
@@ -104,12 +100,12 @@
   }
 
   .about-format {
-      --background-color: #b3b3b3;
+      background-color: #b3b3b3;
       height: 20vw;
       min-height: 5vw;
       width: 95vw;
       border-color: red;
-      border-width: 2px;
+      border-width: 0px;
       border-style: double dashed;
       text-align: left;
       padding-left: 20px;
@@ -117,12 +113,13 @@
   }
 
   .portfolio-format {
+      background-color: #ffe680;
       width: 95vw;
       height: 20vw;
       min-height: 5vw;
       margin-top: 2px;
       border-color: green;
-      border-width: 2px;
+      border-width: 0px;
       border-style: solid dashed;
       text-align: left;
       padding-left: 20px;
@@ -130,12 +127,13 @@
   }
 
   .contact-format {
+      background-color: #9999ff;    
       width: 95vw;
       margin-top: 2px;
       height: 20vw;
       min-height: 5vw;
       border-color: silver;
-      border-width: 2px;
+      border-width: 0px;
       border-style: solid dashed;
       text-align: left;
       padding-left: 20px;
@@ -143,30 +141,32 @@
     }
 
   .socialmedia-format {
-    height: auto;
+    height: 100%;
 	  width: 95vw;
-  	text-align: left;
+  	vertical-align: middle;
+    text-align: center;
     color: white;
 	  font-size: 5.66vw;
 	  border-color: blue;
-	  border-width: 2px;
+	  border-width: 0px;
 	  border-style: solid dashed;
-    padding: 0px 0px 0px 30px;
-    margin: 2px 0px 0px -15px;
+    padding: 0px 0px 0px 0px;
+    margin: 2px 0px 2px 0px;
+    margin-left: 3vw;
   }
 
   .footer-format {
+      background-color: #ffcce6;    
       margin-top: 2px;
-      height: auto;
+      height: 10vw;
       min-height: 5vw;
       width: 95vw;
       border-color: #ff0066;
-      border-width: 2px;
+      border-width: 0px;
       border-style: solid dashed ;
       text-align: left;
       padding-left: 20px;
       font-size: 1vw;
-
 
   }
 
@@ -182,14 +182,14 @@
   border-style: solid;
   border-color: #3399ff;
   border-radius: 20%;
-  margin: 1px 0px 1px 1px;
+  margin: 0px 0px 1px 1px;
   background-color: white;
   padding: 0px 0px 0px 0px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
   cursor:pointer;
-  font-size: 5vw;;
+  font-size: 2vw;
   }
 
 #SMV_linkedin:hover, #SMV_github:hover, #SMV_twitter:hover, #SMV_instagram:hover {
@@ -199,11 +199,13 @@ background-color: orange;
 
 .content-block {
       position:fixed;
-      top: 26px;
+      top: 40px;
       margin-top: 0px;
-      margin-left: 0.1vw;
+      margin-left: 3vw;
       margin-right: 0.1vw;      
       width: auto;
+      margin-top: 2px;
+      margin-bottom: 2px;
       padding: 0;
       height: 100%;
 
@@ -212,6 +214,11 @@ background-color: orange;
       background: white;
 }
 
+/*Genişlik hariç herşeyinin hedaer ile aynı olmasını umuyorum*/
+.topleft-logo header {
+  width: inherit;
+  margin-left: inherit;
+}
 
   </style>
 
@@ -230,6 +237,7 @@ background-color: orange;
     <div class="row header">
       <div class="col-xs-2">
       top left
+      <img class="header topleft-logo" style="height: 40px; width:auto; vertical-align: middle; margin-left: 3vw;" src="file:///E:/FCC/myportfolio/images/progelab-dark-green1-logo001.png">
       </div>
 
       <div class="col-xs-2">
@@ -296,44 +304,6 @@ background-color: orange;
 	  contact me
 	  </div> <!-- contact section -->
 
-	  <div class="row socialmedia-format" id="socialmedia-section">
-	  		<div class="row">
-	  			<div class="col-xs-6">
-					<div class="row" id="socialmedia-venues">
-						<div class="col-xs-3" id="SMV_linkedin">
-							<a href="https://www.linkedin.com/in/oguz-baktir-634b653" target='_blank'>
-								<i class="fa fa-fw fa-linkedin" aria-hidden="true"></i>
-							</a>
-						</div>
-
-						<div class="col-xs-3" id="SMV_github">
-							<a href="https://github.com/fccoguz" target='_blank'>
-								<i class="fa fa-fw fa-github" aria-hidden="true"></i>
-							</a>
-						</div>
-
-						<div class="col-xs-3" id="SMV_twitter">
-							<a href="https://twitter.com/oguzbaktir" target='_blank'>
-								<i class="fa fa-fw fa-twitter" aria-hidden="true"></i>
-							</a>
-						</div>
-
-						<div class="col-xs-3" id="SMV_instagram">
-							<a href="https://www.instagram.com/oguzbaktir/" target='_blank'>
-								<i class="fa fa-fw fa-instagram" aria-hidden="true"></i>
-							</a>
-						</div>
-
-					</div>
-	  			</div> <!-- bitis: sol taraf-->
-
-	  			<div class="col-xs-6">
-
-	  			</div>
-
-
-	  		</div>
-	  </div> <!-- socialmedia section -->
 
 	  <div class="row footer-format" id="footer-section">
 		footer
@@ -341,10 +311,47 @@ background-color: orange;
 
     <!-- sayfanın en alt kısmındaki menü-->
     <div class="row header2">
-      <div class="col-xs-2">
-      top left
-      </div>
+      <div class="col-xs-6">
+            <div class="row socialmedia-format" id="socialmedia-section">
+                <div class="row">
+                  <div class="col-xs-12">
+                  <div class="row" id="socialmedia-venues">
+                    <div class="col-xs-3" id="SMV_linkedin">
+                      <a href="https://www.linkedin.com/in/oguz-baktir-634b653" target='_blank'>
+                        <i class="fa fa-fw fa-linkedin" aria-hidden="true"></i>
+                      </a>
+                    </div>
 
+                    <div class="col-xs-3" id="SMV_github">
+                      <a href="https://github.com/fccoguz" target='_blank'>
+                        <i class="fa fa-fw fa-github" aria-hidden="true"></i>
+                      </a>
+                    </div>
+
+                    <div class="col-xs-3" id="SMV_twitter">
+                      <a href="https://twitter.com/oguzbaktir" target='_blank'>
+                        <i class="fa fa-fw fa-twitter" aria-hidden="true"></i>
+                      </a>
+                    </div>
+
+                    <div class="col-xs-3" id="SMV_instagram">
+                      <a href="https://www.instagram.com/oguzbaktir/" target='_blank'>
+                        <i class="fa fa-fw fa-instagram" aria-hidden="true"></i>
+                      </a>
+                    </div>
+
+                  </div>
+
+                  </div> <!-- bitis: sol taraf-->
+                  <!--div class="col-xs-6">
+                  </div-->
+
+
+                </div>
+            </div> <!-- socialmedia section -->
+            --  top left
+      </div>
+<!--
       <div class="col-xs-2">
       center left
       </div>
@@ -352,7 +359,7 @@ background-color: orange;
       <div class="col-xs-2">
       center right
       </div>
-
+-->
       <div class="col-xs-6">
          <div class="row" id="header-topright-buttons">
             <div class="col-xs-4">
