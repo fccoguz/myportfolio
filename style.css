@@ -1,90 +1,203 @@
-html, body, .container-fluid {
-  height: 100%;  
-}  
+    html, body, .container-fluid {
+        background-color: #cc6699;
+            <!-- beyaz #fff; -->
+        max-width: 100%;
+    }
+
+    h1 {
+    font-family: @font-family-base;
+    font-size: @font-size-base;
+    }
+
+    .col-xs-4 {
+    padding: 0px;
+    margin: 0px;
+    }
 
 
-.btn, .topright-button {
-  height: 50%;
-  width: 100%;
-}
+    .header
+    {   
+	      position: fixed;
+    	  top:0px;
+        left: 0px;
+        width: 100vw;
+        height:30px;
+    	  color: #cc6699;
+        background-color: #cc6699;
+        font-size: 1vw;
+        text-align: center;
+        font-weight: bolder;
+        border-color: blue;
+        border-width: 0px;
+        border-style: solid dashed;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
 
-.topright-button{
-  background-color: #008CBA;
-  border: none;
-  margin: 1px 0px 1px 0px;
-  padding: 0px 0px;
-  color:white;
-  text-align: center;
+     /* header for the bottom part */
+    .header2
+    {   
+        position:fixed;
+        bottom:0px !important;
+        left: 0px;
+        width: 100vw;
+        height:30px;
+        color: #cc6699;
+        background-color: #cc6699;        
+        font-size: 1.3vw;
+        font-weight: bolder;
+        text-align: center;
+        border-color: blue;
+        border-width: 0px;
+        border-style: solid dashed;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+
+
+  .btn, .topright-button{
+    height: auto;
+	  width: 100%;
+	  margin: 0px 0px 0px 0px;
+    background-color: #008CBA;
+    padding: 0px 0px 0px 0px;
+    color:white;
+    vertical-align:  middle;
+    text-align: center;
+    cursor:pointer;
+    webkit-box-shadow: 0 0 0px rgba(0,0,0, .75);
+    moz-box-shadow: 0 0 0px rgba(0,0,0, .75);
+    box-shadow: 0 0 0px rgba(0,0,0, .75);
+  }
+
+  /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+  .topright-button:hover, .topright-button:focus{
+  background-color :orange; /*make the background a little darker*/
+  /*reduce the drop shadow size to give a pushed button effect*/
+  webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+  moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+  box-shadow: 0 0 1px rgba(0,0,0, .75);
+  }
+
+  .about-format {
+      background-color: #ff6666;
+      --#b3b3b3;
+      height: 20vw;
+      min-height: 5vw;
+      width: 95vw;
+      border-color: red;
+      border-width: 0px;
+      border-style: double dashed;
+      text-align: left;
+      padding-left: 20px;
+      font-size: 1vw;
+  }
+
+  .portfolio-format {
+      background-color: #ffe680;
+      width: 95vw;
+      height: 20vw;
+      min-height: 5vw;
+      margin-top: 2px;
+      border-color: green;
+      border-width: 0px;
+      border-style: solid dashed;
+      text-align: left;
+      padding-left: 20px;
+      font-size: 1vw;
+  }
+
+  .contact-format {
+      background-color: #9999ff;    
+      width: 95vw;
+      margin-top: 2px;
+      height: 20vw;
+      min-height: 5vw;
+      border-color: silver;
+      border-width: 0px;
+      border-style: solid dashed;
+      text-align: left;
+      padding-left: 20px;
+      font-size: 1vw;  
+    }
+
+  .socialmedia-format {
+    height: 100%;
+	  width: 95vw;
+  	vertical-align: middle;
+    text-align: center;
+    color: white;
+	  font-size: 5.66vw;
+	  border-color: blue;
+	  border-width: 0px;
+	  border-style: solid dashed;
+    padding: 0px 0px 0px 0px;
+    margin: 2px 0px 2px 0px;
+    margin-left: 3vw;
+  }
+
+  .footer-format {
+      background-color: #009933; 
+      /*#ffcce6;    */
+      margin-top: 2px;
+      height: 10vw;
+      min-height: 5vw;
+      width: 95vw;
+      border-color: #ff0066;
+      border-width: 0px;
+      border-style: solid dashed ;
+      text-align: left;
+      padding-left: 20px;
+      font-size: 1vw;
+
+  }
+
+  img {
+     max-width: 100%;
+     max-height: 100%;
+  }
+
+  #SMV_linkedin, #SMV_github, #SMV_twitter, #SMV_instagram {
+  height: auto;
+  width: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #3399ff;
+  border-radius: 20%;
+  margin: 0px 0px 1px 1px;
+  background-color: white;
+  padding: 0px 0px 0px 0px;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
-  font-size: 1em;
   cursor:pointer;
-  webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
-  moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
-  box-shadow: 0 0 4px rgba(0,0,0, .75);
-}
+  font-size: 2vw;
+  }
 
-/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
-.topright-button:hover, .topright-button:focus{
-background-color :orange; /*make the background a little darker*/
-/*reduce the drop shadow size to give a pushed button effect*/
--webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
--moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
-box-shadow: 0 0 1px rgba(0,0,0, .75);
+#SMV_linkedin:hover, #SMV_github:hover, #SMV_twitter:hover, #SMV_instagram:hover {
+background-color: orange;
 }
 
 
-.about-format {
-    width: 100%;
-    height: 53%;
-    border-color: red;
-    border-width: 2px;
-    border-style: double dashed;
-    text-align: left;    
+.content-block {
+      position:fixed;
+      top: 30px;
+      margin-top: 0px;
+      margin-left: 3vw;
+      margin-right: 0.1vw;      
+      width: auto;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      padding: 0;
+      height: 100%;
+
+      min-height: 3vw;
+      overflow: auto; /*Allows the scrollable area to have a scrollbar based on the height of its content*/
+      background: white;
 }
 
-.portfolio-format {
-    width: 100%;
-    margin-top: 2px;
-    height: 53%;
-    border-color: green;
-    border-width: 2px;
-    border-style: solid dashed;
-    text-align: left;    
-}
-
-.contact-format {
-    width: 100%;
-    margin-top: 2px;
-    margin-bottom: 2px;  
-    height: 20%;
-    border-color: silver;
-    border-width: 2px;
-    border-style: solid dashed;
-    text-align: left;    
-}
-
-.footer-format {
-    height: 5%;
-    width: 100%;
-    border-color: gold;
-    border-width: 2px;
-    border-style: solid dashed ;
-    text-align: left;
-}
-
-img {
-   max-width: 100%;
-   max-height: 100%;
-}
-
-.header
-{
-    height:42px;
-    width: 100%;
-    border-color: blue;
-    border-width: 2px;
-    border-style: solid dashed;
-    padding: 1px 0px 1px 0px;
-    margin: 1px 5px 1px 5px;   
+/*GeniÅŸlik hariÃ§ herÅŸeyinin hedaer ile aynÄ± olmasÄ±nÄ± umuyorum*/
+.topleft-logo header {
+  width: inherit;
+  margin-left: inherit;
 }
